@@ -1,0 +1,23 @@
+
+
+<div class="master">
+  <h1>TODO List</h1>
+  <h2>A place to store your todos</h2>
+  <input type="text" name="filter" placeholder="Filter your to-dos" [(ngModel)]="filterText">
+  <section>
+          <ol>
+      <li *ngFor="let task of getFilteredTodos(); index as i">
+      
+        <button id=compBut *ngIf="!task.completed"(click)=" toggleCompleted(i)" >Completed</button>
+        <span class="items" [ngClass]="{ done: task.completed }">{{
+          task.task
+        }}</span> <button class="x"(click)= "remove(i)">X</button>
+      </li>
+    </ol>
+   
+  </section>
+  <form (ngSubmit)="addToDo()">
+ <input type="text" placeholder="Add to your To-do" [(ngModel)]= "newToDo.task" name="text"/>
+  <button type="submit" id="add">Add</button>
+  </form>
+</div>

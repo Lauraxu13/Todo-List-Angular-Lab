@@ -1,0 +1,49 @@
+items {
+  list-style-type: decimal;
+}
+.done {
+  text-decoration: line-through;
+}
+
+.master {
+  background: white;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  position: relative;
+  margin: 0px 60px;
+  padding: 10px;
+}
+section {
+  position: relative;
+}
+
+.x {
+  border: none;
+  position: absolute;
+  right: 1%;
+  background-color: white;
+}
+
+input {
+  width: 96%;
+  margin: 5px auto;
+  padding: 8px;
+  border-radius: 5px;
+  display: block;
+}
+
+#compBut {
+  border: #ff69b4 solid 2px;
+  border-radius: 5px;
+  color: #ff69b4;
+  background-color: white;
+}
+
+#add {
+  background-color: #ff1493;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  display: block;
+  padding: 9px 29px;
+}
